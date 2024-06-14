@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotate on Hover</title>
+       <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+         margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .image-container {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        display: block;
+        width: 300px; /* Adjust size as needed */
+        height: auto;
+        animation: normal; /* Initial state */
+    }
+
+    .image-container:hover img {
+        animation: rotateImage 2s linear forwards; /* Trigger animation */
+        animation-play-state: running;
+        
+    }
+
+    @keyframes rotateImage {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/black-blur-back.jpg"  width="200" height="180" alt="Rotating Image" class="rotating-image">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const image = document.querySelector(".rotating-image");
+
+    image.addEventListener("mouseover", function() {
+        if (!image.classList.contains("rotate")) {
+            image.classList.add("rotate");
+            image.addEventListener("animationend", function() {
+                image.classList.remove("rotate");
+            }, { once: true });
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
