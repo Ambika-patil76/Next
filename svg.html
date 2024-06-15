@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        svg{
+            border: solid 1px red;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <p>defult svg</p>
+    <svg></svg>
+
+    <p>custom svg (300*300)</p>
+    <svg height="300" width="300">
+       <rect width="50" height="50" x="0" y="250" style="fill:red"></rect>
+       <rect width="50" height="50" x="250" y="250" style="fill:rgb(51, 255, 0)"></rect>
+       <rect width="50" height="50" x="250" y="0" style="fill:rgb(255, 0, 179)"></rect>
+       <rect width="50" height="50" x="0" y="0" style="fill:rgb(255, 255, 0)"></rect>
+
+       <rect width="50" height="50" x="0" y="125" style="fill:rgb(144, 149, 151)"></rect>
+       <rect width="50" height="50" x="125" y="250" style="fill:rgb(132, 239, 239)"></rect>
+       <rect width="50" height="50" x="125" y="0" style="fill:rgb(106, 77, 251)"></rect>
+       <rect width="50" height="50" x="250" y="125" style="fill:rgb(240, 149, 84)"></rect>
+
+       <circle  cx="150" cy="150" r="25" style="fill:rgb(240, 149, 84)"></circle>  
+    </svg>
+
+    <br> <br>
+
+    <svg height="400" width="150" style="background-color: blue;">
+        <circle  cx="75" cy="75" r="50" style="fill:rgb(255, 0, 0)" stroke-width="2" stroke="yellow"></circle>
+        <circle  cx="75" cy="200" r="50" style="fill:rgb(204, 255, 0)"></circle>
+        <circle  cx="75" cy="325" r="50" style="fill:rgb(43, 255, 0)"></circle>
+    </svg>
+
+    <br> <br>
+    
+     <svg height="400" width="400">
+            <line  x1="0" y1="0" x2="400" y2="400" style="fill:rgb(255, 0, 0)" stroke-width="2" stroke="yellow"></line>
+            <line  x1="0" y1="400" x2="400" y2="0" style="fill:rgb(15, 189, 18)" stroke-width="2" stroke="red"></line>
+    
+            <line  x1="0" y1="200" x2="400" y2="200" style="fill:rgb(225, 255, 0)" stroke-width="2" stroke="pink"></line>
+            <line  x1="200" y1="0" x2="200" y2="400" style="fill:rgb(225, 255, 0)" stroke-width="2" stroke="orange"></line>
+    
+            <circle  cx="200" cy="200" r="50" style="fill:rgb(43, 255, 0)"></circle>          
+    </svg>
+    
+    <br> <br>
+    
+    <svg height="400" width="400">
+            <polyline  points="0,0 33,78 78,122 22,256 324,345 400,400" style="fill:none" stroke-width="2" stroke="yellow"></polyline>            
+    </svg>
+
+    <svg height="400" width="400">
+        <polygon  points="200,0 400,200 0,200" style="fill:green" stroke-width="2" stroke="yellow"></polygon>        
+    </svg>
+
+    <svg height="400" width="400">
+        <polyline  points="0,400 50,360 80,330 100,300 140,260 180,220 190,210 200,220 230,250 260,280 300,320 310,310 330,280 370,240 390,270 400,290" style="fill:none" stroke-width="2" stroke="red"></polyline>            
+    </svg>
+
+    <svg height="400" width="400">
+        <polygon  points="100,0 300,0 400,100 400,300 300,400 100,400 0,300 0,100" style="fill:rgb(251, 130, 0)" stroke-width="2" stroke="green"></polygon>        
+    </svg>
+
+    <svg height="400" width="400">
+        <polygon  points="200,0 400,400 0,150 400,150 0,400" style="fill:rgb(251, 130, 0)" stroke-width="2" stroke="green"></polygon>        
+    </svg>
+
+    <svg height="400" width="400">
+        <polygon  points="150,150 200,10 250,150 230,150 230,300 " style="fill:rgb(251, 130, 0)" stroke-width="2" stroke="green"></polygon>        
+    </svg>
+
+
+</body>
+</html>
