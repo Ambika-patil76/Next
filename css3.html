@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px red;
+            text-shadow: 0px 0px 10px red;
+            text-align: center;
+            line-height: 200px;
+            animation-name: abc;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            float: left;
+        }
+        @keyframes abc {
+            from{
+                background-color: blue;
+            }
+            to 
+            {
+                background-color: red;
+            }
+        }
+        .box{
+            height:200px;
+            width:200px;
+            border: solid 1px red;
+            float: left;
+        }
+        #rotate:hover{
+            transform: rotate(360deg);
+            transition: 3s;
+        }
+        #scale:hover{
+            transform: scale(2,2);
+            transition: 3s;
+        }
+        #skew:hover{
+            transform: skew(30deg,40deg);
+            transition: 3s;  
+        }
+        #translate:hover{
+            transform:translate(40px,30px);
+            transition: transform 3s ease-in-out;   
+        }
+
+
+        .rgba{
+            background-color:rgba(111,12,13, 0.5);
+        }
+
+
+        .lgradient{
+            background: linear-gradient(
+                45deg,
+                rgba(15, 37, 110, 1) 29%,
+                rgba(32, 178, 7, 1) 75%,
+                rgba(219, 26, 26, 1) 87%
+            );
+            background-blend-mode: normal;
+        }
+
+
+        .rgradient{
+            background: radial-gradient(
+                100% 100% at 50% 50%,
+                rgba(15, 37, 110, 1) 29%,
+                rgba(32, 178, 7, 1) 75%
+            );
+            background-blend-mode: normal;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box">Digisnare</div>
+
+
+    <div class="box">Rotate
+        <img src="images/back-ass.jpg" width="200" height="180" id="rotate">
+    </div>
+    <div class="box">Scale
+        <img src="images/back-ass.jpg" width="200" height="180" id="scale">          <!-- zooming -->
+    </div>
+    <div class="box">Skew
+        <img src="images/back-ass.jpg" width="200" height="180" id="skew">           <!-- 360deg rotate -->
+    </div>
+    <div class="box">Translate
+        <img src="images/back-ass.jpg" width="200" height="180" id="translate">      <!-- moving -->
+    </div>
+
+    <div class="box rgba">RGBA</div>
+
+    <div class="box lgradient">Linear gradient</div>
+    <div class="box rgradient">Radial gradient</div>
+</body>
+</html>
