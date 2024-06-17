@@ -6,71 +6,70 @@
     <title>CSS3 Animation Properties</title>
     <style>
         body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
-.animated-box {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    animation: none; /* Initial state */
-}
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            animation: none; /* Initial state */
+        }
 
-@keyframes exampleAnimation {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        background-color: #3498db;
-        opacity: 1;
-        border-radius: 0;
-    }
-    25% {
-        transform: translateY(-50px) rotate(45deg);
-        background-color: #e74c3c;
-        opacity: 0.75;
-        border-radius: 50%;
-    }
-    50% {
-        transform: translateY(0) rotate(90deg);
-        background-color: #f1c40f;
-        opacity: 0.5;
-        border-radius: 0;
-    }
-    75% {
-        transform: translateY(50px) rotate(135deg);
-        background-color: #2ecc71;
-        opacity: 0.75;
-        border-radius: 50%;
-    }
-    100% {
-        transform: translateY(0) rotate(180deg);
-        background-color: #3498db;
-        opacity: 1;
-        border-radius: 0;
-    }
-}
+        @keyframes exampleAnimation {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                background-color: #3498db;
+                opacity: 1;
+                border-radius: 0;
+            }
+            25% {
+                transform: translateY(-50px) rotate(45deg);
+                background-color: #e74c3c;
+                opacity: 0.75;
+                border-radius: 50%;
+            }
+            50% {
+                transform: translateY(0) rotate(90deg);
+                background-color: #f1c40f;
+                opacity: 0.5;
+                border-radius: 0;
+            }
+            75% {
+                transform: translateY(50px) rotate(135deg);
+                background-color: #2ecc71;
+                opacity: 0.75;
+                border-radius: 50%;
+            }
+            100% {
+                transform: translateY(0) rotate(180deg);
+                background-color: #3498db;
+                opacity: 1;
+                border-radius: 0;
+            }
+        }
 
-.animated-box:hover {
-    animation-name: exampleAnimation;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-   
-}
+    .animated-box:hover {
+        animation-name: exampleAnimation;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
 
     </style>
 </head>
